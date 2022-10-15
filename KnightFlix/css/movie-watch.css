@@ -1,0 +1,426 @@
+
+  @media (max-width: 768px) {
+  
+    .watch-container {
+      width: 100% !important;
+      overflow: hidden;
+    }
+    .watch-container .about-movie {
+      display: inline-block !important;
+    }
+    .watch-container .about-movie p {
+      width: 100% !important;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .movie-card {
+    font: 14px/22px "Lato", Arial, sans-serif;
+    color: #a9a8a3;
+  }
+  .movie-card .watch-container {
+    width: 100%;
+    background: var(--body-color);
+    position: relative;
+  }
+  .movie-card .watch-container a .video{
+    height: 250px ;
+      width: 200px;
+      border: 5px soli  white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      cursor: pointer;
+      overflow: hidden;
+      position: absolute;
+      top: 260px;
+    left: 80px;
+    z-index: 4;
+  }
+  
+  .movie-card .watch-container .displayImg img {
+    height: 250px ;
+      width: 200px;
+      border: 5px soli  white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      cursor: pointer;
+      overflow: hidden;
+      position: absolute;
+      top: 260px;
+    left: 80px;
+    z-index: 5;
+  }
+ 
+   .movie-card .watch-container .displayImg img:hover {
+      z-index: 0;
+      transition: 0s;
+  } 
+  
+  .movie-card .watch-container .back-cover {
+    height: 442px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+  }
+  .movie-card .watch-container .back-cover:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../movieImg/Shop-img/shop-batman2.jpg");
+    z-index: -1010;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: skewY(-3.2deg);
+    transform-origin: 0 0;
+  }
+  .movie-card .watch-container .cover {
+    position: absolute;
+    top: 260px;
+    left: 80px;
+    z-index: 2;
+  }
+  .movie-card .watch-container .cover:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  .movie-card .watch-container .details {
+    padding: 265px 0 0 298px ;
+  }
+  .movie-card .watch-container .details .title1 {
+    color: #eee;
+    font-size: 44px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .movie-card .watch-container .details .title1 span {
+    position: absolute;
+    top: 3px;
+    margin-left: 12px;
+    background: #c4af3d;
+    border-radius: 5px;
+    color: #544c21;
+    font-size: 14px;
+    padding: 0px 4px;
+  }
+  .movie-card .watch-container .title2 {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .movie-card .watch-container .likes {
+    margin-left: 30px;
+    display: inline-block;
+    padding-bottom: 19px;
+  }
+  .movie-card .watch-container .likes:before {
+    /* content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png"); */
+    position: relative;
+    top: 2px;
+    padding-right: 7px;
+  }
+  .movie-card .watch-container .about-movie {
+    display: inline-flex;
+    bottom: 0px;
+    height: 200px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #b1b0ac;
+  }
+  .movie-card .watch-container .about-movie .colum-one {
+    padding-left: 85px;
+    padding-top: 90px;
+    width: 23%;
+    float: left;
+    text-align: left;
+  }
+  .movie-card .watch-container .about-movie .colum-one .colum-catogary {
+    text-align: left;
+    margin-left: -20px;
+  }
+  .movie-card .watch-container .about-movie .colum-one .colum-catogary span {
+    padding: 1px 8px;
+    font-size: 14px;
+    background: white;
+    border-radius: 10px;
+    margin-left: 2px;
+    color: black;
+  }
+  .movie-card .watch-container .about-movie .colum-one .colum-catogary span:hover {
+    background: #999;
+    color: black;
+    cursor: pointer;
+  }
+  .movie-card .watch-container .about-movie .colum-second {
+    padding-left: 38px;
+    padding-top: 21px;
+    margin-left: 59px;
+    width: 90%;
+    float: left;
+  }
+  .movie-card .watch-container .about-movie .colum-second p {
+    width: 76%;
+  }
+  .movie-card .watch-container .about-movie .colum-second p a {
+    text-decoration: none;
+    color: #6e6ed8;
+  }
+  .movie-card .watch-container .about-movie .colum-second  ul{
+      margin: 0;
+      padding: 0;
+      position: absolute;
+  
+  }
+  .movie-card .watch-container .about-movie .colum-second  ul li {
+      list-style: none;
+      float:left;
+      margin: 10px;
+      width: 100px;
+      height:100px;
+      line-height: 100px;
+      text-align:center;
+      background:#fff;
+      border-radius: 50%;
+      position: relative;
+      transition: .5s ease-in-out;
+  }
+  .movie-card .watch-container .about-movie .colum-second ul li:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #ff003b;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: .5s ease-in-out;
+      z-index: -20004;
+  }
+  .movie-card .watch-container .about-movie .colum-second  ul li:hover:before {
+      
+          transform: scale(.9);
+      
+  }
+  .movie-card .watch-container .about-movie .colum-second  ul li:hover{
+      color: #fff;
+      
+  }
+  .movie-card .watch-container .about-movie .colum-second  ul li img{
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 90px;
+    width: 90px;
+  }
+  /*start rate system style */
+  fieldset {
+    border-color: #fff;
+    border-style: none;
+  }
+  
+  .starRating {
+    margin-left: -2px;
+  }
+  
+  .starRating > * {
+    float: left;
+  }
+  
+  /* 
+  some  animtion   do  when  load window 
+  
+  */
+  @-webkit-keyframes pulse {
+    50% {
+      color: #5e5e5e;
+      text-shadow: 0 0 15px #777777;
+    }
+  }
+  @keyframes pulse {
+    50% {
+      color: #5e5e5e;
+      text-shadow: 0 0 15px #777777;
+    }
+  }
+  .starRating label {
+    height: 40px;
+    width: 15%;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .starRatinglabel:nth-of-type(5):after {
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+  }
+  
+  .starRating label:nth-of-type(4):after {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  
+  .starRating label:nth-of-type(3):after {
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+  }
+  
+  .starRating label:nth-of-type(2):after {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  
+  .starRating label:nth-of-type(1):after {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+  
+  .starRating label:after {
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    position: absolute;
+    content: "☆";
+    color: #444;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    -webkit-animation: 1s pulse ease;
+    animation: 1s pulse ease;
+  }
+  
+  .starRating label:hover:after {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #5e5e5e;
+  }
+  
+  .starRating input {
+    display: none;
+  }
+  
+  /*  " +" This will only work on IE7 or above. In IE6, the style will not be applied to any elements  so used "~ " this  meaning select  any element  after the input radio button 
+  show 
+  
+   http://jsfiddle.net/7c05m7tv/ 
+   https://css-tricks.com/almanac/selectors/a/adjacent-sibling/
+   http://jsfiddle.net/7c05m7tv/70/
+  
+  */
+  .starRating input:checked + label:after,
+  .starRating input:checked ~ label:after {
+    content: "★";
+    color: #f9bf3b;
+    text-shadow: 0 0 20px #f9bf3b;
+  }
+  
+  .myName {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    padding: 5px 15px;
+    color: #fff;
+    font-family: arial;
+    width: 30%;
+  }
+  
+  .myName a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: normal;
+    float: left;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  
+  .myName a:hover {
+    text-decoration: underline;
+  }
+  
+  .myName img {
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+  }
+  
+  
+  
+  
+  
+   .Pop-video{
+      display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.8);
+    height: 100%;
+    width: 100%;
+  
+  }
+  
+  .Pop-video video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 850px;
+  border-radius: 10px;
+  object-fit: cover;
+  }
+  
+  .Pop-video span i{
+  font-weight: bold;
+  font-size: 24px; 
+    }
+  
+    .Pop-video span{
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: #fff;
+  z-index: 200;
+  cursor: pointer ;  
+  }
+  @media (max-width:768px){
+    .Pop-video video{
+      width: 95%;
+    }
+  }
+  
+  
+
+
+  @media (max-width:768px){
+    .movie-card .watch-container .about-movie .colum-one {
+        padding-left: 65px;
+        padding-top: 90px;
+        width: 55%;
+        float: left;
+        text-align: left;
+      }
+
+
+      .movie-card .watch-container a .video{
+
+          top: 260px;
+        left: 60px;
+      }
+      .movie-card .watch-container .displayImg img {
+      
+          top: 260px;
+        left: 60px;
+      }
+      .movie-card .watch-container .details {
+        padding: 265px 0 0 278px ;
+      }
+      .movie-card .watch-container .likes {
+        margin-left: 60px;
+      }
+  }
